@@ -1,0 +1,61 @@
+/**
+ * 前提ADT开发环境
+ *
+ * 1.下载NDK，
+ * https://developer.android.com/ndk/downloads/index.html (官网，但下载失败)
+ * http://tools.android-studio.org/index.php/85-tools/109-android-tools-download （百度云盘下载）
+ * 配置：系统变量->Path  D:\tool\adt_new\ndk\android-ndk-r11b
+ * 验证：ndk-build 能否执行
+ *
+ * 2.下载ADT-23.0.0  （ndk开发工具，地址同上）
+ * 配置：Help-> Install New Software，点击Add，在弹出页面选择下载的ADT-23.0.0.jar
+ *
+ * 3.创建和src同级的jni文件夹
+ *
+ * 4.开发Java代码
+ * public static native String getStringFromC();
+ *
+ * 5.生成.h文件 ： D:\work\2UI>javah -classpath bin/classes;D:\setup\Android\sdk\platforms\android-17\android.jar -d jni com.example.ui.ndk.NdkAcvitity
+ * 注意这里必须指定android.jar 否则编译失败
+ *
+ * 6.开发c代码
+ *
+ * 7.生成so文件 ： D:\work\2UI>ndk-build （存放在obj文件夹下）
+ * 需要配置Android.mk、Application.mk文件
+ *
+ * 8.java加载so文件：
+ * 	static {
+		System.loadLibrary("hello");
+	}
+ */
+
+
+
+/**
+ * 在AS中  http://blog.csdn.net/flyingsnow2211/article/details/51567298
+ * D:\work\other\MyTools\app\src\main>javah -d jni -classpath ..\..\build\intermediates\classes;D:\setup\Android\sdk\platforms\android-17\android.jar tools.zhang.com.jnilibrary.NdkUtils
+
+ * 可以的呀，why？？？？
+ * D:\work\other\MyTools\jnilibrary\src\main>javah -d jnis -classpath ..\..\build\intermediates\classes tools.zhang.com.jnilibrary.NdkUtils
+ */
+
+
+
+ javap 生成签名信息
+ -s 表示输出签名信息
+ -p 同-private，输出包括private访问权限的成员信息
+
+D:\work\other\MyTools\jnilibrary\build\intermediates\classes\release>javap -s tools.zhang.com.jnilibrary.NdkUtils
+Compiled from "NdkUtils.java"
+public class tools.zhang.com.jnilibrary.NdkUtils {
+  public tools.zhang.com.jnilibrary.NdkUtils();
+    Signature: ()V
+
+  public static native java.lang.String fromJni();
+    Signature: ()Ljava/lang/String;
+}
+
+// 对应的java
+public class NdkUtils {
+    public static native String fromJni();
+}

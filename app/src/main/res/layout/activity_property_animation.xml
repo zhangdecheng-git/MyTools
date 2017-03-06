@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66ff0000"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="start" />
+
+    <TextView
+        android:id="@+id/rotate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="rotate" />
+
+    <TextView
+        android:id="@+id/rotatex"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="rotatex" />
+
+
+    <TextView
+        android:id="@+id/rotatey"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="rotatey" />
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="alpha" />
+
+    <TextView
+        android:id="@+id/scaleX"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="scaleX" />
+
+    <TextView
+        android:id="@+id/translate_X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="translate_X" />
+
+    <TextView
+        android:id="@+id/backgroundColor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#55ff0000"
+        android:gravity="center"
+        android:text="backgroundColor" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Button" />
+</LinearLayout>

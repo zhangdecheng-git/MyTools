@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66f0f0f0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#660000ff">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:background="#6600ff00">
+
+            <tools.zhang.com.mytools.scroll.MyScrollView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ff0000" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/getx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:background="@drawable/getx" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getx"
+            android:background="@drawable/gety" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <tools.zhang.com.mytools.setXfermode.PorterDuffXfermodeView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="#00ff00"/>
+
+        <tools.zhang.com.mytools.setXfermode.GuaGuaCardView_SRCOUT
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="#0000ff"/>
+
+        <tools.zhang.com.mytools.setXfermode.CircleWave_DSTIN
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"/>
+        
+        <tools.zhang.com.mytools.setXfermode.HeartMap
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <tools.zhang.com.mytools.setXfermode.IrregularWaveView
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <tools.zhang.com.mytools.setXfermode.BlurMaskFilterView
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/common_checkbox_selector</item>
+    </style>
+
+    <style name="QihooAccountDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="bottom_in_dialog_theme">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+</resources>
