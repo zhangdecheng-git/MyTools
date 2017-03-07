@@ -12,6 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import testpush.zhang.com.utils.LibrariesUtils;
 import tools.zhang.com.jnilibrary.NdkUtils;
 import tools.zhang.com.mytools.DisplayActivity;
 import tools.zhang.com.mytools.R;
@@ -38,9 +39,11 @@ import tools.zhang.com.mytools.setXfermode.PorterDuffXfermodeActivity;
 import tools.zhang.com.mytools.setXfermode.XfermodeActivity;
 import tools.zhang.com.mytools.threadpool.ScheduledUtils;
 import tools.zhang.com.mytools.utils.CoreDaemonUtils;
+import tools.zhang.com.mytools.utils.ToastUtil;
 import tools.zhang.com.mytools.video.VideoActivity;
 import tools.zhang.com.mytools.video.VideoActivity2;
 import tools.zhang.com.mytools.videorecord.RecordVideoActivity;
+import tools.zhang.com.mytools.volley.VolleyActivity;
 
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener {
 
@@ -97,6 +100,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         mDataList.add(new MainData(28, "捕获crash"));
         mDataList.add(new MainData(29, "录制视频"));
         mDataList.add(new MainData(30, "启动activity、service崩溃"));
+        mDataList.add(new MainData(31, "volley"));
     }
 
     @Override
@@ -187,6 +191,11 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                 break;
             case 30:
                 testActivity(CrashGetStringMainActivity.class);
+                break;
+            case 31:
+                String toast = LibrariesUtils.getLibraryString("main");
+                ToastUtil.show(mContext, toast, 1);
+                testActivity(VolleyActivity.class);
                 break;
             default:
                 break;

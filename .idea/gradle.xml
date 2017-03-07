@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/oat2dex" />
             <option value="$PROJECT_DIR$/soloader-0.1.0" />
             <option value="$PROJECT_DIR$/soloader_my" />
+            <option value="$PROJECT_DIR$/utils" />
+            <option value="$PROJECT_DIR$/volley" />
           </set>
         </option>
         <option name="myModules">
@@ -23,6 +25,8 @@
             <option value="$PROJECT_DIR$/oat2dex" />
             <option value="$PROJECT_DIR$/soloader-0.1.0" />
             <option value="$PROJECT_DIR$/soloader_my" />
+            <option value="$PROJECT_DIR$/utils" />
+            <option value="$PROJECT_DIR$/volley" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/oat2dex/oat2dex.iml" filepath="$PROJECT_DIR$/oat2dex/oat2dex.iml" />
       <module fileurl="file://$PROJECT_DIR$/soloader-0.1.0/soloader-0.1.0.iml" filepath="$PROJECT_DIR$/soloader-0.1.0/soloader-0.1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/soloader_my/soloader_my.iml" filepath="$PROJECT_DIR$/soloader_my/soloader_my.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
     </modules>
   </component>
 </project>
