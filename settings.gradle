@@ -1,1 +1,1 @@
-include ':app', ':soloader-0.1.0', ':jnilibrary', ':oat2dex', ':soloader_my', ':volley', ':utils'
+include ':app', ':soloader-0.1.0', ':jnilibrary', ':oat2dex', ':soloader_my', ':volley', ':utils', ':okhttp'
